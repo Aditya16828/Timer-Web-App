@@ -17,7 +17,6 @@ function calculate(seconds) {
     hrs = hrs - days * 24;
 
     setHTML(days, hrs, min, sec);
-    // console.log(`days: ${days}, hrs: ${hrs}, minutes: ${min}, seconds: ${sec}`);
 }
 
 function process() {
@@ -27,7 +26,7 @@ function process() {
         clearInterval(id);
         setHTML("--", "--", "--", "--");
         document.getElementsByTagName('link')[0].setAttribute('href', 'style2.css');
-        console.log('i');
+        document.getElementsByTagName('input')[0].value = '';
         return;
     }
     calculate(diff);
@@ -41,8 +40,9 @@ function getTime() {
 }
 
 function main() {
-    console.log("i");
+    document.getElementById('submit').disabled = true;
     getTime();
     id = setInterval(process, 1000);
 }
+
 document.getElementById('submit').addEventListener('click', main);
