@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(240, 102, 61);
+    padding-top: 10em;
+}
+
+#timer{
+    display: flex;
+    font-size: 5em;
+    background-color: rgb(236, 60, 60);
+    margin: 0.5em;
+    color: aliceblue;
+}
+
+#settimer input{
+    font-size: 2em;
+}
+#settimer button{
+    font-size: 1.7em;
+}
