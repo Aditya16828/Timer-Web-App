@@ -45,5 +45,4 @@ function main() {
     getTime();
     id = setInterval(process, 1000);
 }
-
 document.getElementById('submit').addEventListener('click', main);

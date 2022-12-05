@@ -19,3 +19,25 @@ body{
 #settimer button{
     font-size: 1.7em;
 }
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aquamarine;
+    padding-top: 10em;
+}
+
+#timer{
+    display: flex;
+    font-size: 5em;
+    background-color: burlywood;
+    margin: 0.5em;
+}
+
+#settimer input{
+    font-size: 2em;
+}
+#settimer button{
+    font-size: 1.7em;
+}
